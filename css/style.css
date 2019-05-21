@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.clearfix:before,
+.clearfix:after{
+    display: table;
+    content: ' ';
+}
+.clearfix:after{
+    clear: both;
+}
+
+.wrapper .active{
+    color: black;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    text-shadow: none;
+}
+
+.wrapper{
+    margin: 20px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: -1px;
+    padding: .5em 1em;
+    cursor: pointer;
+    font: lighter 14px Arial;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px 3px 0 0;
+    background: #0b7fb2;
+    box-shadow: 3px -1px 4px -2px #ddd,
+    -3px -1px 4px -2px #ddd;
+    text-shadow: 0 -.5px 1px black;
+}
+
+.tab-content{
+    display: inline-block;
+    width: 487px;
+}
+
+.tab-item{
+    display: flex;
+    width: inherit;
+    min-height: 277px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px -1px #b1b1b1;
+}
+
+
+
+
+/* ---------- Первая Страница ---------- */
+
+.container1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 444px;
+    min-height: 250px;
+    padding: 11px 15px;    
+}
+
+.avatar{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+#img-user{
+    display: block;
+    margin-left: -4px;
+    border: 0;
+}
+
+#btn-friends{
+    display: inline-block;
+    margin-top: 3px;
+    padding: 9px 14px;
+    cursor: pointer;
+    text-align: center;
+    font: 12px Arial;
+    color: #fff;
+    border-radius: 3px;
+    background: #e67b00;
+    box-shadow: 0 1px 1px #b6b6b6;
+    text-shadow: 0 -1px 1px black;
+}
+
+
+
+.info{
+    width: 280px;
+}
+
+.info-header{
+    margin-top: 8px;
+    margin-bottom: 27px;
+    cursor: pointer;
+}
+
+#user-fio{
+    margin-bottom: 7px;
+    font: normal 23px Arial;
+    line-height: 1;
+}
+
+#user-city{
+    font-size: 11px;
+    line-height: .8;
+    color: #757575;
+}
+
+
+
+.info-middle{
+    margin-bottom: 28px;
+}
+
+.profile-info-row .label{
+    float: left;
+    width: 160px;
+    font: bold 12px Arial;
+    line-height: 1;
+}
+
+.profile-info-row:not(:last-child) .label,
+.content{
+    margin-bottom: 12px;
+}
+
+.profile-info-row .content{
+    cursor: pointer;
+    font: 12px Arial;
+    line-height: 1;
+}
+
+.profile-info-row #user-email{
+    vertical-align: top;
+    text-decoration: none;
+    color: #3487ba;
+    border-bottom: 1px solid #1574af;
+}
+
+
+
+.info-footer div:first-child{
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: top;
+    font: bold 12px Arial;
+}
+
+#add-interest{
+    display: inline-block;
+    margin-top: 1px;
+    margin-left: 2px;
+    vertical-align: top;
+    text-decoration: none;
+    font: 11px Arial;
+    color: #3487ba;
+}
+
+#interest-panel{
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;   
+}
+
+#interest-panel a{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 4px 10px 6px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 12px;
+    color: #3487ba;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+}
+
+
+
+
+/* ---------- Вторая Страница ---------- */
+
+.container2{
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 472px;
+    height: 250px;
+    padding: 15px 0 15px 15px;
+}
+
+.friend{
+    display: inline-block;
+    width: auto;
+    height: 62px;
+    margin-bottom: 30px;
+}
+
+.img-wrap{
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.friend-info{
+    position: relative;
+    display: inline-block;
+    width: 140px; /* Нужно для переноса слов */
+    height: 62px;
+    vertical-align: top;
+}
+
+.friend-info .friend-name a{
+    text-decoration: none;
+    font: bold 13px Arial;
+    color: #1574af;
+    border-bottom: 1px solid #1574af;
+}
+
+.friend-info .friend-city{
+    display: inline-block;
+    margin-top: 5px;
+    word-wrap: break-word;
+    font-size: 11px;
+    line-height: 1;
+}
+
+.friend-info .friend-status{
+    position: absolute;
+    bottom: 2px;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 1;
+    color: #59a151;
+}
+
+
+
+
+/* ---------- Окно добавления интересов ---------- */
+
+#interests-form-block{
+    display: none;
+    margin-left: 10px;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px -1px #b1b1b1;
+}
+
+#interests-form{
+    padding: 20px 40px;
+}
+
+#interests-form input{
+    display: block;
+}
+
+#btn-interest{
+    display: inline-block;
+    margin-top: 6px;
+    padding: 9px 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 12px 'Arial';
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #b6b6b6;
+}
+
+.input-user-data{
+    display: block;
+    width: 100px;
+}

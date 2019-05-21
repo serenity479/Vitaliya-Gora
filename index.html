@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/jquery.mCustomScrollbar.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="tabs">
+            <span class="tab">Профиль</span>
+            <span class="tab">Друзья Пользователя</span>     
+        </div>
+        <div class="tab-content">
+            <div class="tab-item">
+                <div class="container1">
+                    <div class="avatar">
+                        <img id="img-user" src="img/UserPic.png" alt="">
+                        <a id="btn-friends">Добавить в друзья</a>
+                    </div>
+                    <div class="info"> 
+                        <div class="info-header">
+                            <h4 id="user-fio">Виталя Гора</h4>
+                            <div id="user-city">г.Нижние Шахты</div>
+                        </div>
+                        <div class="info-middle">
+                            <div class="profile-info-row">
+                                <div class="label">Семейное положение</div>
+                                <div class="content" id="user-marital-status">Холост</div>
+                            </div>
+                            
+                            <div class="profile-info-row">
+                                <div class="label">Телефон</div>
+                                <div class="content" id="user-phone">+7 (440) 554-32-12</div>
+                            </div>
+                            <div class="profile-info-row">
+                                <div class="label">Email</div>
+                                <a class="content" id="user-email" href="#">vitalya@gora.ru</a>
+                            </div>
+                        </div>
+                        <div class="info-footer">
+                            <div>Интересы</div>
+                            <a id="add-interest" href="#">(Добавить)</a>                             
+                            <div id="interest-panel">
+                                <a>Музыка</a>
+                                <a>Компьютеры</a>
+                                <a>Радио</a>
+                            </div>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+            <div class="tab-item">
+                <div class="container2">
+                    <div class="friend">
+                        <div class="img-wrap">
+                            <a href="#">
+                                <img src="img/friend1.png">
+                            </a>
+                        </div>
+                        <div class="friend-info">
+                            <div class="friend-name"><a href="#">Лев Бронштейн</a></div>
+                            <div class="friend-city">г. Ханты-Мансийск</div>
+                            <div class="friend-status">Online</div>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="img-wrap">
+                            <a href="#">
+                                <img src="img/friend2.png">
+                            </a>
+                        </div>
+                        <div class="friend-info">
+                            <div class="friend-name"><a href="#">Находка Капитал</a></div>
+                            <div class="friend-city">г. Усть-Бельск</div>
+                            <div class="friend-status"></div>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="img-wrap">
+                            <a href="#">
+                                <img src="img/friend3.png">
+                            </a>
+                        </div>
+                        <div class="friend-info">
+                            <div class="friend-name"><a href="#">Яндекс Петренко</a></div>
+                            <div class="friend-city">г. Пермь</div>
+                            <div class="friend-status"></div>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="img-wrap">
+                            <a href="#">
+                                <img src="img/friend4.png">
+                            </a>
+                        </div>
+                        <div class="friend-info">
+                            <div class="friend-name"><a href="#">Успех Возможностей</a></div>
+                            <div class="friend-city">г. Радонеж</div>
+                            <div class="friend-status">Online</div>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="img-wrap">
+                            <a href="#">
+                                <img src="img/friend5.png">
+                            </a>
+                        </div>
+                        <div class="friend-info">
+                            <div class="friend-name"><a href="#">Инна Нашлась</a></div>
+                            <div class="friend-city">г. Омск</div>
+                            <div class="friend-status">Online</div>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="img-wrap">
+                            <a href="#">
+                                <img src="img/friend6.png">
+                            </a>
+                        </div>
+                        <div class="friend-info">
+                            <div class="friend-name"><a href="#">Алла Подольская</a></div>
+                            <div class="friend-city">г. Петропавловск-Камчатский</div>
+                            <div class="friend-status">Online</div>
+                        </div>
+                    </div>  
+                    <div class="friend">
+                        <div class="img-wrap">
+                            <a href="#">
+                                <img src="img/friend6.png">
+                            </a>
+                        </div>
+                        <div class="friend-info">
+                            <div class="friend-name"><a href="#">Алла Подольская</a></div>
+                            <div class="friend-city">г. Петропавловск-Камчатский</div>
+                            <div class="friend-status">Online</div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div id="interests-form-block">
+            <form id="interests-form" action="#" method="post">
+                <input id="input-interest" type="text" placeholder="Введите свой интерес">
+                <a id="btn-interest" href="#" >Добавить интерес</a>  
+            </form>
+        </div>
+        
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="libs/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
